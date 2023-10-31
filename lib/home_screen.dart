@@ -1,3 +1,4 @@
+import 'package:e_commerce/login_screen.dart';
 import 'package:e_commerce/on_boarding_screen_body.dart';
 import 'package:flutter/material.dart';
 
@@ -11,18 +12,23 @@ class HomeScreen extends StatelessWidget {
       body: Column(
         children: [
           OnBoardingScreenBody(),
-          Container(
-            width: 327,
-            height: 58,
-            alignment: Alignment.center,
-            decoration: BoxDecoration(
-              color: Color(0XFFFBC236),
+          InkWell(
+            onTap: (){
+              Navigator.pushNamed(context, Login.routeName);
+            },
+            child: Container(
+              width: 327,
+              height: 58,
+              alignment: Alignment.center,
+              decoration: BoxDecoration(
+                color: Color(0XFFFBC236),
+              ),
+              child: Text('Get Started',style: TextStyle(
+                fontSize: 20,
+                fontWeight: FontWeight.w400,
+                color: Colors.black
+              ),),
             ),
-            child: Text('Get Started',style: TextStyle(
-              fontSize: 20,
-              fontWeight: FontWeight.w400,
-              color: Colors.black
-            ),),
           ),
           SizedBox(
             height: 25.0,
