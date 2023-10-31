@@ -1,6 +1,8 @@
 import 'package:e_commerce/register_screen.dart';
 import 'package:flutter/material.dart';
 
+import 'forget_password.dart';
+
 class Login extends StatelessWidget {
   static const String routeName='Login';
   var Email = TextEditingController();
@@ -95,7 +97,7 @@ class Login extends StatelessWidget {
                 children: [
                   TextButton(
                       onPressed: () {
-                        //Navigator.push(context, MaterialPageRoute(builder: (context) => Forget()));
+                        Navigator.push(context, MaterialPageRoute(builder: (context) => Forget()));
                       },
                       child: Text(
                         "Forget password?",

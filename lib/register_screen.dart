@@ -158,9 +158,9 @@ class _RegistState extends State<Register> {
                   style: TextStyle(fontSize: 17, color: Colors.white),),
                 TextButton(onPressed: () {
                   Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => Register(),));
+                      MaterialPageRoute(builder: (context) => Login(),));
                 },
-                  child: Text("Sign in",
+                  child: Text("Log in",
                     style: TextStyle(fontSize: 17, color: Colors.amber),),),
               ],)
           ],
